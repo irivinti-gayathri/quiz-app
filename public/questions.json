@@ -1,0 +1,13 @@
+[
+    {
+        "question": "Javascript is an _______ language?",
+        "options": ["object oriented", "procedural", "none of the above"],
+        "correctAnswerIndex": 2
+    },
+    {
+        "question": "Which of the following keywords is used to define a variable in Javascript?",
+        "options": ["let", "var", "Both","None of the above"],
+        "correctAnswerIndex": 2
+    }
+    
+]
