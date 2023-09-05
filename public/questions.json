@@ -1,13 +1,52 @@
 [
     {
-        "question": "Javascript is an _______ language?",
-        "options": ["object oriented", "procedural", "none of the above"],
+        "question": "What does the 'typeof' operator return for a function?",
+        "options": ["'function'", "'object'", "'function' or 'object'", "'undefined'"],
+        "correctAnswerIndex": 0
+    },
+    {
+        "question": "Which of the following is used to loop through an array in JavaScript?",
+        "options": ["for loop", "while loop", "if statement", "switch statement"],
+        "correctAnswerIndex": 0
+    },
+    {
+        "question": "Which JavaScript method is used to add an element to the end of an array?",
+        "options": ["push()", "append()", "addToEnd()", "insert()"],
+        "correctAnswerIndex": 0
+    },
+    {
+        "question": "What is the purpose of the 'JSON.parse()' method in JavaScript?",
+        "options": ["To stringify a JSON object", "To convert a JSON string to a JavaScript object", "To validate JSON syntax", "To create a JSON object"],
+        "correctAnswerIndex": 1
+    },
+    {
+        "question": "Which keyword is used to declare a constant variable in JavaScript?",
+        "options": ["let", "var", "const", "define"],
         "correctAnswerIndex": 2
     },
     {
-        "question": "Which of the following keywords is used to define a variable in Javascript?",
-        "options": ["let", "var", "Both","None of the above"],
+        "question": "What is the result of the expression '3 + 2 + '5' in JavaScript?",
+        "options": ["10", "7", "55", "Invalid expression"],
         "correctAnswerIndex": 2
+    },
+    {
+        "question": "In JavaScript, which built-in object can be used to perform mathematical operations?",
+        "options": ["String", "Array", "Math", "Date"],
+        "correctAnswerIndex": 2
+    },
+    {
+        "question": "What does the 'NaN' stand for in JavaScript?",
+        "options": ["Not a Null", "Not a Number", "No Answer Needed", "No Action Needed"],
+        "correctAnswerIndex": 1
+    },
+    {
+        "question": "How can you comment out a single line of code in JavaScript?",
+        "options": ["// This is a comment", "/* This is a comment */", "# This is a comment", "%% This is a comment"],
+        "correctAnswerIndex": 0
+    },
+    {
+        "question": "Which JavaScript method is used to remove the last element from an array?",
+        "options": ["pop()", "remove()", "delete()", "shift()"],
+        "correctAnswerIndex": 0
     }
-    
 ]
