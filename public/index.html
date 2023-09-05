@@ -5,32 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    <div id="join-room">
-        <h2>Join a Quiz Room</h2>
-        <input type="text" id="room-code" placeholder="Enter Room Code">
-        <input type="text" id="player-name" placeholder="Your Name">
-        <button id="join-button">Join Room</button>
+    <div class="container-fluid">
+        <div id="join-room">
+            <h2>Join a Quiz Room</h2>
+            <div class="namebox">
+                <input type="text" id="room-code" placeholder="Enter Room Code">
+                <input type="text" id="player-name" placeholder="Your Name">
+            </div>
+            <button id="join-button">Join room</button>
+        </div>
     </div>
-
     <div id="quiz-container" style="display: none;">
         <div id="question-container">
             <h3>Question:</h3>
             <p id="question"></p>
         </div>
 
-        <div id="options-container">
-            <h3>Options:</h3>
-            <div id="options"></div>
+        <div class="optionbox">
+            <div id="options-container">
+                <h3>Options:</h3>
+                <div id="options"></div>
+            </div>
         </div>
+        <div class="output">
+            <button id="next-button" disabled>Next</button>
 
-        <button id="next-button" disabled>Next</button>
+            <p id="result"></p>
+        </div>
+<div id="message-container"></div>
 
-        <p id="result"></p>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
+    <!-- Include your Socket.io script -->
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io();
+
+  // Listen for the roomCreated event and display the room ID
+  socket.on('roomCreated', (roomId) => {
+    // Display the room ID wherever you want (e.g., in an HTML element)
+    document.getElementById('room-id').textContent = roomId;
+  });
+
+  // ... Other client-side code for handling quiz functionality
+</script>
+
+    
+    
 </body>
 </html>
+ 
