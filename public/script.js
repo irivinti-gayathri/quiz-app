@@ -96,6 +96,4 @@ document.addEventListener('DOMContentLoaded', () => {
         nextButton.disabled = false;
         displayQuestion(0);
     });
-
-    // ... (other event handlers for user joining, leaving, etc.)
 });
